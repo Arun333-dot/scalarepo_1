@@ -124,7 +124,7 @@ jobs:
   jobs/job3:
     name: job3
     description: ''
-    fabricUID: 3614
+    fabricUID: 3600
     scheduler:
       Databricks: {}
     cloudProvider: null

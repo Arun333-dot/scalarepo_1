@@ -1,7 +1,7 @@
 {
   "metainfo" : {
     "type" : "Databricks",
-    "fabricId" : "3614",
+    "fabricId" : "3600",
     "jobId" : "jobs/job3",
     "name" : "job3",
     "schedule" : "None",
