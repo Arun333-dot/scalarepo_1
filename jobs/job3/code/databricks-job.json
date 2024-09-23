@@ -2,7 +2,7 @@
   "fabric_id" : "3614",
   "components" : [ {
     "PipelineComponent" : {
-      "path" : "dbfs:/Volumes/qa-team/nana_patekar/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/p3-1.0-py3-none-any.whl",
+      "path" : "dbfs:/ sdflmslkdmf.  !@#$#%^&*%$#@!$%^&*^%$#@!/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/p3-1.0-py3-none-any.whl",
       "nodeName" : "Pipeline_0",
       "id" : "kHJBUcE9xwgwPLL7NLfzq$$w5sYUXyIw1q1OdlRzvvoN",
       "language" : "python",
@@ -69,7 +69,7 @@
           "package" : "prophecy-libs==1.9.16"
         }
       }, {
-        "whl" : "dbfs:/Volumes/qa-team/nana_patekar/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/p3-1.0-py3-none-any.whl"
+        "whl" : "dbfs:/ sdflmslkdmf.  !@#$#%^&*%$#@!$%^&*^%$#@!/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/p3-1.0-py3-none-any.whl"
       } ],
       "email_notifications" : { }
     } ],
