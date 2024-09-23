@@ -25,7 +25,7 @@
         "spark_conf" : {
           "spark.databricks.cluster.profile" : "singleNode",
           "spark.master" : "local[*, 4]",
-          "spark.prophecy.metadata.fabric.id" : "3614",
+          "spark.prophecy.metadata.fabric.id" : "3600",
           "spark.prophecy.metadata.job.uri" : "__PROJECT_ID_PLACEHOLDER__/jobs/job3",
           "spark.prophecy.metadata.is.interactive.run" : "false",
           "spark.prophecy.project.id" : "__PROJECT_ID_PLACEHOLDER__",
