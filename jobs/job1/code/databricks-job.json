@@ -2,7 +2,7 @@
   "fabric_id" : "3574",
   "components" : [ {
     "PipelineComponent" : {
-      "path" : "/Volumes/qa-team/qa_volume_managed/managed_volume/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/p1-1.0-py3-none-any.whl",
+      "path" : "/Volumes/qa-team/qa_volume_external/qa_external_volume/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/p1-1.0-py3-none-any.whl",
       "nodeName" : "Pipeline_0",
       "id" : "LDynuX4S8mQIYs8_3XvVS$$qMpbE7bSLd0RVVgL1CrGe",
       "language" : "python",
@@ -69,7 +69,7 @@
           "package" : "prophecy-libs==1.9.16"
         }
       }, {
-        "whl" : "/Volumes/qa-team/qa_volume_managed/managed_volume/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/p1-1.0-py3-none-any.whl"
+        "whl" : "/Volumes/qa-team/qa_volume_external/qa_external_volume/prophecy/artifacts/staging/cp/__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLACEHOLDER__/pipeline/p1-1.0-py3-none-any.whl"
       } ],
       "email_notifications" : { }
     } ],
