@@ -1,0 +1,358 @@
+{
+  "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
+    "functions" : { },
+    "codeGenConfiguration" : {
+      "editableConfig" : true,
+      "plibVersion" : {
+        "mavenVersion" : "8.3.0-SNAPSHOT",
+        "pyPiVersion" : "1.9.16"
+      },
+      "sparkConfigJinjaEnabled" : true
+    },
+    "id" : "1",
+    "uri" : "pipelines/p3",
+    "pipelineSettingsInfo" : {
+      "applicationName" : "p3",
+      "hasApplication" : true,
+      "isFunctionsPackageDirDefined" : true
+    },
+    "language" : "python",
+    "fabricId" : "3614",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "abhishekse2etestsprophecyioteam.pythonvolumesproject.functions",
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "42",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "43",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "p3",
+    "configurationVersion" : "v2"
+  },
+  "connections" : [ {
+    "id" : "Xw4lbDgiFV84QAvPa_JBH",
+    "source" : "HFsBrq0nCORd9YNFaif27$$-K3BvlDPwZKt7C7KmwN44",
+    "sourcePort" : "WNZs6n-pD-XuPPVMSEIWK$$XZT7lhSrJuJQ58eYkhhzH",
+    "target" : "Xd5wnoAiTtLPqRjlKluX2$$NiN8lhsxRnnevkd-o0ord",
+    "targetPort" : "tggxLZg8adCqT1oEb3SUe$$pw5dV9bCG_oPmInByuNni"
+  } ],
+  "processes" : {
+    "HFsBrq0nCORd9YNFaif27$$-K3BvlDPwZKt7C7KmwN44" : {
+      "id" : "HFsBrq0nCORd9YNFaif27$$-K3BvlDPwZKt7C7KmwN44",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "datasrte",
+        "slug" : "datasrte",
+        "x" : -120,
+        "y" : -40,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "WNZs6n-pD-XuPPVMSEIWK$$XZT7lhSrJuJQ58eYkhhzH",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "datasetId" : "datasets/datasrte"
+      }
+    },
+    "Xd5wnoAiTtLPqRjlKluX2$$NiN8lhsxRnnevkd-o0ord" : {
+      "id" : "Xd5wnoAiTtLPqRjlKluX2$$NiN8lhsxRnnevkd-o0ord",
+      "component" : "Target",
+      "metadata" : {
+        "label" : "Target_1",
+        "slug" : "Target_1",
+        "x" : 60,
+        "y" : -40,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "tggxLZg8adCqT1oEb3SUe$$pw5dV9bCG_oPmInByuNni",
+          "slug" : "in0",
+          "schema" : {
+            "type" : "struct",
+            "fields" : [ {
+              "name" : "string_col",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A column for storing textual data",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "binary_col",
+              "type" : "binary",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A column for storing binary data",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "boolean_col",
+              "type" : "boolean",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Indicates a true or false condition",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "decimal_col",
+              "type" : "decimal(10,2)",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Represents a precise numeric value with two decimal places",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "float_col",
+              "type" : "float",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A floating-point number representing a value with decimal precision.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "double_col",
+              "type" : "double",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A double-precision floating-point number for more accurate decimal representation.",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "byte_col",
+              "type" : "byte",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A small integer value representing a byte of data",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "short_col",
+              "type" : "short",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A short integer value used for compact data representation",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "integer_col",
+              "type" : "integer",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A whole number representing a specific value",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "long_col",
+              "type" : "long",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A larger whole number representing a specific value",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "date_col",
+              "type" : "date",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The date associated with the record",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "timestamp_col",
+              "type" : "timestamp",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "The exact date and time when the record was created or modified",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "timestamp_ntz_col",
+              "type" : "timestamp_ntz",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Timestamp without time zone information",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "null_col",
+              "type" : "string",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Column that may contain null values",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "daytime_interval_col",
+              "type" : "interval day to second",
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Interval representing a duration of time in days and seconds",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "array_col",
+              "type" : {
+                "type" : "array",
+                "elementType" : "string",
+                "containsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "Collection of string values",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "map_col",
+              "type" : {
+                "type" : "map",
+                "keyType" : "string",
+                "valueType" : "integer",
+                "valueContainsNull" : true
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A collection of key-value pairs for flexible data representation",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            }, {
+              "name" : "struct_col",
+              "type" : {
+                "type" : "struct",
+                "fields" : [ {
+                  "name" : "nested_string",
+                  "type" : "string",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "A nested string value within the structured data",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                }, {
+                  "name" : "nested_int",
+                  "type" : "integer",
+                  "nullable" : true,
+                  "metadata" : {
+                    "description" : "A nested integer value within the structured data",
+                    "mappings" : [ ],
+                    "tags" : [ ]
+                  }
+                } ]
+              },
+              "nullable" : true,
+              "metadata" : {
+                "description" : "A structured data type containing nested information",
+                "mappings" : [ ],
+                "tags" : [ ]
+              }
+            } ]
+          },
+          "isStreaming" : false
+        } ],
+        "outputs" : [ ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.Xd5wnoAiTtLPqRjlKluX2$$NiN8lhsxRnnevkd-o0ord.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}

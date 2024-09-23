@@ -1,0 +1,69 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "3614",
+    "jobId" : "jobs/job3",
+    "name" : "job3",
+    "schedule" : "None",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "small",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "retries" : 0,
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    }
+  },
+  "processes" : {
+    "kHJBUcE9xwgwPLL7NLfzq$$w5sYUXyIw1q1OdlRzvvoN" : {
+      "id" : "kHJBUcE9xwgwPLL7NLfzq$$w5sYUXyIw1q1OdlRzvvoN",
+      "component" : "Pipeline",
+      "metadata" : {
+        "label" : "Pipeline_0",
+        "slug" : "Pipeline_0",
+        "x" : -300,
+        "y" : -40
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "ioaqZP0WzgqA-1R7R9v8e$$hCTnvorlW0P8BAtL8EqcT",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "IMwlxy4zeiy1pWtw8kGeH$$maHLKfuR3kcOaDpLapKEa",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      },
+      "properties" : {
+        "pipelineId" : "pipelines/p3",
+        "configurations" : {
+          "schema" : [ ],
+          "instances" : {
+            "PythonVolumesProject" : [ "default" ]
+          },
+          "overrides" : { },
+          "selectedInstance" : "default"
+        }
+      }
+    }
+  },
+  "connections" : [ ]
+}
